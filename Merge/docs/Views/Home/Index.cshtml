@@ -1,0 +1,26 @@
+﻿
+<container>
+    <div class="row">
+        <div class="col-12">
+            <form action="~/Home/Upload" method="post" enctype="multipart/form-data" class="dropzone" id="dropzoneForm">
+                <div class="fallback">
+                    <input name="file" type="file" multiple />
+                    <input type="submit" value="Upload" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-12 alert alert-success text-center" style="display:none" name ="success-msg">
+            <span>
+                Your merged file is ready. Please hit "Download" button.
+            </span>
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-12 text-center">
+            <button class="btn btn-success" id="merge-btn" disabled>Merge</button>
+            <a class="btn btn-info" id="downloadbtn" style="display:none" download>Download</a>
+        </div>
+    </div>
+</container>
